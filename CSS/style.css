@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+/* Font settings */
+.redressed {
+    font-family: 'Redressed', cursive;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    text-align: center;
+}
+
+/* Navbar styles */
+.cc-navbar {
+    background-color: rgba(0, 0, 0, 0.55); 
+    font-family: 'Merriweather', serif; 
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; 
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px 0;
+}
+
+
+.cc-navbar .nav-link {
+    color: #fff; 
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.45s ease-in-out, border-color 0.3s ease; 
+}
+
+
+.cc-navbar .nav-link:hover,
+.cc-navbar .nav-link.active {
+    padding-bottom: 5px;
+    border-bottom-color: var(--bs-teal);
+}
+
+
+.btn-order {
+    color: var(--bs-teal);
+    border-color: var(--bs-teal); 
+    transition: 0.55s;
+}
+
+.btn-order:hover,
+.btn-order:active {
+    color: #fff; 
+    background-color: var(--bs-teal);
+}
+
+/* Banner section */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/fond.jpg") center center fixed no-repeat; /* Banner background */
+    background-size: cover; 
+    height: auto; 
+}
+
+h1 {
+    color: #fff;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+}
+.card-title {
+    color: white; 
+}
+.card {
+    max-width: 500px;
+    margin: 15px auto;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.available {
+    border-bottom: 3px solid #07284a;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 200px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #fff;
+    background-color: #07284a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styled Section */
+section {
+    border: 1px solid #011020;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #e7eef8; 
+}
+
+ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+}
+
+.hamburger-icon .bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    margin: 5px auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links ul li {
+    margin: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links ul li {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+    #menu-toggle:checked ~ .navbar-links {
+        display: flex;
+    }
+
+   
+    #menu-toggle:checked + .hamburger-icon .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    #menu-toggle:checked + .hamburger-icon .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger-icon .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Projet Système</title>
+</head>
+
+<body>
+    <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand texte-uppercase fw-bolder mx-4 py-3" href="#">Rapport</a>
+            <!-- Hidden Checkbox for Hamburger -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- Hamburger Icon -->
+            <label for="menu-toggle" class="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <!-- Navbar Links -->
+            <div class="navbar-links">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="projet.html">Projet</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="planning.html">Planning</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link active" aria-current="page" href="questions.html">Questions</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="btn btn-order rounded-3" href="question.html">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner d-flex justify-content-center align-items-center pt-5">
+        <!-- Main content -->
+        <div class="container my-5">
+            <section>
+                <h1 class="text-center mb-4">Présentation du Projet SAÉ S1.03</h1>           
+            </section> <!-- Added closing section tag here -->
+        </div>
+    </section>
+
+    <section>
+        <!-- Example Code -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Qu’est-ce que la virtualisation ?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La virtualisation consiste, en informatique, à exécuter sur une machine hôte, dans un environnement isolé, un ou plusieurs systèmes d’exploitation, <strong>on parle alors de virtualisation système.</strong>
+                        Pour mettre en place un environnement de virtualisation il faut 3 étapes : l’activation de la virtualisation matérielle dans le BIOS, l’installation de l’environnement de virtualisation (VmWare etc), création des machines virtuelles (setup avec l’iso)
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Quelle est la différence entre un émulateur, un simulateur et un outil de virtualisation ?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Émulateur: </strong>Un émulateur reproduit le comportement d'un système matériel ou logiciel sur un autre système. Il imite le fonctionnement d'un matériel spécifique, permettant ainsi d'exécuter des logiciels conçus pour ce matériel sur une plateforme différente.
+                        <strong>Exemple :</strong> Bluestack est un émulateur permettant d’utiliser ses applications de son smartphone de type APK par exemple sur PC.
+                        <strong>Simulateur: </strong>Un simulateur reproduit le comportement d'un système ou d'un processus sans nécessairement imiter le matériel sous-jacent.
+                        <strong>Outil de virtualisation: </strong>Un outil de virtualisation permet de créer des environnements virtuels qui fonctionnent comme des systèmes d'exploitation ou des serveurs distincts sur un même matériel physique.
+                        <strong>Exemple :</strong> Virtual StudioBox, etc.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Quel est le type de virtualisation pour VirtualBox et VMware Workstation ?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Le type de virtualisation pour les environnements comme VirtualBox, VMware Workstation, etc. est le type 2, car il permet d'exécuter une machine virtuelle au-dessus du système d'exploitation déjà installé.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <p>© 2024 IUT de Paris Rives de Seine - Département Informatique</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-f4OJY6NFkldLL5Elh8lUw72/XOWk6whcdRY/UqnnN7pQ/KsEKblPXzzIuczzTAqj" crossorigin="anonymous"></script>
+</body>
+
+</html>
