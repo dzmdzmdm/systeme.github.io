@@ -12,19 +12,21 @@
 </head>
 
 <body>
-    <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar w-100 navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand texte-uppercase fw-bolder mx-4 py-3" href="#">Rapport</a>
-            <!-- Hidden Checkbox for Hamburger -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <!-- Hamburger Icon -->
-            <label for="menu-toggle" class="hamburger-icon">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </label>
-            <!-- Navbar Links -->
-            <div class="navbar-links">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item pe-5">
                         <a class="nav-link" href="index.html">Accueil</a>
@@ -80,7 +82,7 @@
                         <img src="IMG/2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">2</h5>
-                            <p class="card-text">Après avoir installé le ISO de ubuntu, nous allons choisir un dossier où télécharger la machine.</p>
+                            <p class="card-text">Après avoir installé le ISO de ubuntu, nous avons choisi un chemin spécifique pour l'installation car nous séparons les exécutables et applications qui sont externe a windows de la partition de disque où est installer windows  afin d’avoir une meilleurs gestion de la mémoire de masse. </p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +91,7 @@
                         <img src="IMG/3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">3</h5>
-                            <p class="card-text">Choisir un nom d'utilisateur ainsi qu'un mot de passe.</p>
+                            <p class="card-text">Après avoir tout bien choisi, la configuration d'un nom d'utilisateur et d'un mot de passe est une nécessité, tandis que le nom d'hôte est optionnel, mais nous avons quand même choisi de mettre UBUNTU comme nom d'hôte afin de le reconnaître parmis les fichiers.</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +100,7 @@
                         <img src="IMG/4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">4</h5>
-                            <p class="card-text">Allocation de la mémoire RAM pour la machine virtuelle</p>
+                            <p class="card-text">Ici, nous pouvons choisir la quantité de RAM et le nombre de coeurs du processeurs que nous avons besoin d’allouer a ubuntu. Cela signifie que je peux choisir combien de ressources de mon ordinateur ma machine virtuelle peut utiliser.</p>
                         </div>
                     </div>
                 </div>
@@ -107,12 +109,14 @@
                         <img src="IMG/5.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">5</h5>
-                            <p class="card-text">Allocation de la taille du disque de la machine virtuelle.</p>
+                            <p class="card-text">Allocation de la taille du disque de la machine virtuelle.<br>Pour le disque dur virtuel, ou «l'espace » virtuel utilisé sur mon ordinateur, j'allouerai simplement 25 Go pour des utilisations futures.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
             <h2>Configuration dans le terminal</h2>
             <div class="card" style="width: 100%; height: auto;">
                 <img src="IMG/6.png" class="card-img-top" alt="...">
@@ -142,6 +146,8 @@
                     </div>
                 </div>
             </div>
+
+
             <section class="hebergement py-5">
                 <h2 class="text-center">Hébergement du Serveur</h2>
                 <div class="container">
@@ -150,8 +156,8 @@
                             <div class="card">
                                 <img src="IMG/HB.png" class="card-img-top" alt="Hébergement 1">
                                 <div class="card-body">
-                                    <h5 class="card-title">Hébergement 1</h5>
-                                    <p class="card-text">Description de l'hébergement 1.</p>
+                                    <h5 class="card-title"><strong>Envoie des fichiers vers le serveur...</strong></h5>
+                                    <p class="card-text">Comme vous pouvez le voir sur cette image, voici un extrait du site héberger sur notre serveur Apache via WebStorm qui permet de configurer des serveurs locaux comme le nôtre..</p>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +165,7 @@
                             <div class="card">
                                 <img src="IMG/HB1.png" class="card-img-top" alt="Hébergement 2">
                                 <div class="card-body">
-                                    <h5 class="card-title">Site sous pc</h5>
+                                    <h5 class="card-title"><strong>Rendu sur PC</strong></h5>
                                     <p class="card-text">Le site fonctionne correctement après avoir été hébérgé.</p>
                                 </div>
                             </div>
@@ -168,7 +174,7 @@
                             <div class="card">
                                 <img src="IMG/HB2.png" class="card-img-top" alt="Hébergement 3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Site sous téléphone</h5>
+                                    <h5 class="card-title"><strong>Rendu sur téléphone</strong></h5>
                                     <p class="card-text">De même sur un téléphone, le site respecte le format.</p>
                                 </div>
                             </div>
@@ -177,8 +183,8 @@
                             <div class="card">
                                 <img src="IMG/HB3.png" class="card-img-top" alt="Hébergement 2">
                                 <div class="card-body">
-                                    <h5 class="card-title">SSH File Transfer Protocol</h5>
-                                    <p class="card-text">Transfère des fichiers de ma machine au serveur apache de manière sécurisée. Nous avons donc configuré le protocole. Ici, local path correspond à l’endroit où sont stocker mes différents fichiers du site. Le deployment path permet de dire que c’est à la racine préciser dans root path qui est « home » que je souhaite entreposer mes fichiers.</p>
+                                    <h5 class="card-title"><strong>SSH File Transfer Protocol</strong></h5>
+                                    <p class="card-text">Le SFTP protocole nous a permis de faire le transfère des fichiers de ma machine au serveur apache de manière sécurisée.<br> Nous avons donc configuré le protocole.<br> Ici, local path correspond à l’endroit où sont stocker mes différents fichiers du site. Le deployment path permet de dire que c’est à la racine préciser dans root path qui est « home » que je souhaite entreposer mes fichiers.</p>
                                 </div>
                             </div>
                         </div>  
